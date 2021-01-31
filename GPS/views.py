@@ -20,8 +20,8 @@ def gps(request):
 
     return JsonResponse(data)
 def gpspost(request):
-	if request.method == 'POST':
-		form = gps_form(request.POST)
+	if request.method == 'GET':
+		form = gps_form(request.GET)
 
 		if form.is_valid():
 			form.save()

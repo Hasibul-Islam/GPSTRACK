@@ -4,15 +4,15 @@
 	<title>Getting Latitude And Longitude</title>
 </head>
 <body>
-<form method="post" action="">
+<form method="get" action="">
   {%csrf_token%}
   <div>
     <table>
-      
+
       <td>{{form.as_p}}</td>
-      
+
     </table>
-    
+
   </div>
 <button type="Submit">Submit</button>
 </body>
